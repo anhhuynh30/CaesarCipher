@@ -29,6 +29,11 @@ def decoder(cipher,offset):
 			decoded_message += letter
 	return decoded_message
 
+# Decode the cipher into text message when the offset is unknown:
+cipher = "Fojxed yi vkd!"
+for i in range(1,26):
+	print("Offset: " + str(i))
+	print("\t" + decoder(cipher, i))
 
 	
 		
